@@ -1,0 +1,18 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Speech bubble icon -->
+  <path d="M12 8C6.477 8 2 12.477 2 18s4.477 10 10 10h8l4 4V28c5.523 0 10-4.477 10-10S29.523 8 24 8H12z" 
+        fill="hsl(217, 91%, 60%)" stroke="hsl(217, 91%, 50%)" stroke-width="1"/>
+  
+  <!-- Checkmark inside speech bubble -->
+  <path d="M10 18l3 3 7-7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- MockMate text -->
+  <text x="45" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="hsl(217, 91%, 60%)">
+    MockMate
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="45" y="40" font-family="Arial, sans-serif" font-size="10" fill="hsl(215, 20%, 65%)">
+    Interview Practice
+  </text>
+</svg>

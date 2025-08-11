@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark &));
+
+@theme {
+  --color-background: hsl(8 8 8);
+  --olor-foreground: hsl(210 40% 98%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(240 10% 3.9%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(240 10% 3.9%);
+  --color-primary: hsl(142 71% 45%);
+  --color-primary-foreground: hsl(355 100% 100%);
+  --color-primary-glow: hsl(142 86% 38%);
+  --color-secondary: hsl(240 4.8% 95.9%);
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+  --color-muted: hsl(240 4% 16%);
+  --color-muted-foreground: hsl(240 5% 65%);
+  --color-accent: hsl(142 71% 45%);
+  --color-accent-foreground: hsl(355 100% 100%);
+  --color-destructive: hsl(0 72.2% 50.6%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-border: hsl(240 4% 16%);
+  --color-input: hsl(240 4% 16%);
+  --color-ring: hsl(142 71% 45%);
+  --radius: 0.75rem;
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(142 86% 35%),
+    hsl(142 86% 45%)
+  );
+  --gradient-hero: linear-gradient(
+    135deg,
+    hsl(8 8% 8%) 0%,
+    hsl(240 4% 12%) 50%,
+    hsl(240 4% 16%) 100%
+  );
+  --gradient-card: linear-gradient(
+    145deg,
+    hsl(12 12% 12%) 0%,
+    hsl(240 4% 14%) 100%
+  );
+  
+  --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.8);
+  --shadow-glow: 0 0 40px hsl(142 86% 28% / 0.3);
+  --shadow-card: 0 10px 30px -10px hsl(142 76% 36% / 0.1);
+  --shadow-button: 0 4px 15px -5px hsl(142 76% 36% / 0.3);
+  --shadow-primary: 0 10px 30px -10px hsl(142 76% 36% / 0.3);
+
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --color-mockmate-bg: hsl(210 24% 6%);
+  --color-interview-bg: hsl(218 23% 6%);
+  --color-interview-surface: hsl(222 17% 11%);
+  --color-interview-surface-hover: hsl(215 25% 16%);
+  --color-interview-border: hsl(215 20% 20%);
+  --color-interview-accent: hsl(142 76% 36%);
+  --color-interview-accent-hover: hsl(142 76% 30%);
+  --color-interview-text-primary: hsl(210 40% 98%);
+  --color-interview-text-secondary: hsl(217 10% 65%);
+  --color-interview-text-muted: hsl(215 13% 50%);
+  --color-success: hsl(142 76% 36%);
+  --color-success-foreground: hsl(0 0% 98%);
+  --color-error: hsl(0 72% 51%);
+  --color-error-foreground: hsl(0 0% 98%);
+  --color-warning: hsl(38 92% 50%);
+  --color-warning-foreground: hsl(0 0% 98%);
+
+
+
+  --color-status-recording: hsl(0 84% 60%);
+  --color-status-active: hsl(142 76% 36%);
+  --color-status-warning: hsl(45 93% 47%);
+  --color-status-inactive: hsl(215 13% 50%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar-background: var(--sidebar-background);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --gradient-primary: var(--gradient-primary);
+  --gradient-hero: var(--gradient-hero);
+  --gradient-card: var(--gradient-card);
+  --shadow-elegant: var(--shadow-elegant);
+  --shadow-glow: var(--shadow-glow);
+  --color-sidebar-ring: var(--color-sidebar-ring);
+  --muted: hsl(240 4.8% 95.9%);
+  --muted-foreground: hsl(240 3.8% 46.1%);
+  --transition-smooth: var(--transition-smooth);
+  --mockmate-bg: var(--mockmate-bg);
+  --interview-bg: var(--interview-bg);
+  --interview-text-primary: var(--interview-text-primary);
+  --interview-text-secondary: var(--interview-text-secondary);
+  --interview-border: var(--interview-border);
+  --interview-surface: var(--interview-surface);
+  --interview-surface-hover: var(--interview-surface-hover);
+  --interview-accent: var(--interview-accent);
+  --interview-accent-hover: var(--interview-accent-hover);
+  --interview-text-muted: var(--interview-text-muted);
+  --shadow-card: var(--shadow-card);
+  --shadow-button: var(--shadow-button);
+  --status-recording: var(--status-recording);
+  --status-active: var(--status-active);
+  --status-warning: var(--status-warning);
+  --status-inactvie: var(--status-inactive);
+  --success: var(--success);
+  --success-foreground: var(--success-foreground);
+  --error: var(--error);
+  --error-foreground: var(--error-foreground);
+  --warning: var(--warning);
+  --warning-foreground: var(--warning-foreground);
+  --shadow-primary: var(--shadow-primary);
+
+}
+
+.dark {
+  --background: hsl(8 8% 8%);
+  --foreground: hsl(210, 40%, 98%);
+  --popover: hsl(12 12% 12%);
+  --popover-foreground: hsl(210 40% 98%);
+  --primary: hsl(142 86% 28%);
+  --primary-foreground: hsl(355 25% 97%);
+  --primary-glow: hsl(142 86% 38%);
+  --secondary: hsl(240 4% 16%);
+  --secondary-foreground: hsl(210 40% 98%);
+  --muted: hsl(240 4% 16%);
+  --muted-foreground: hsl(240 5% 65%);
+  --accent: hsl(142 86% 28%);
+  --accent-foreground: hsl(355 25% 97%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(240 4% 16%);
+  --input: hsl(240 4% 16%);
+  --ring: hsl(142 86% 28%);
+  --radius: 0.75rem;
+
+  --sidebar-background: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: 217.2 91.2% 59.8%;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(142 86% 35%),
+    hsl(142 86% 45%)
+  );
+  --gradient-hero: linear-gradient(
+    135deg,
+    hsl(4 4% 4%) 0%,
+    hsl(240 4% 8%) 50%,
+    hsl(240 4% 12%) 100%
+  );
+  --gradient-card: linear-gradient(
+    145deg,
+    hsl(8 8% 8%) 0%,
+    hsl(240 4% 10%) 100%
+  );
+
+  --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.9);
+  --shadow-glow: 0 0 40px hsl(142 86% 35% / 0.4);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-black text-foreground;
+    font-family: var(--font-sans, "Inter"), sans-serif;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(142 86% 35%), hsl(142 86% 45%));
+  }
+
+  .shadow-button {
+    box-shadow: 0 10px 30px -10px hsl(0 0% 0% / 0.9);
+  }
+
+  .glow-button {
+    box-shadow: 0 0 20px #c084fc, 0 0 40px #a855f7;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #c084fc, 0 0 20px #a855f7;
+  }
+  50% {
+    box-shadow: 0 0 20px #c084fc, 0 0 40px #a855f7;
+  }
+  100% {
+    box-shadow: 0 0 10px #c084fc, 0 0 20px #a855f7;
+  }
+}
+
+@layer components{
+    .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent;
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+   .loading-spinner {
+    @apply inline-block animate-spin rounded-full border-2 border-solid border-current border-r-transparent;
+  }
+}
