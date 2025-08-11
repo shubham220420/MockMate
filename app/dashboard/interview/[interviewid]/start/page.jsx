@@ -22,7 +22,7 @@ const Start = () => {
   const fetchInterview = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/api/get-interview", {
+      const response = await fetch("/api/get-interview", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id }),

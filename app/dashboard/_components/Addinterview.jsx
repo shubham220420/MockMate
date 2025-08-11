@@ -39,7 +39,7 @@
       if (!isFormValid) return;
 
       try {
-        const response = await fetch("http://localhost:3000/api/gemini", {
+        const response = await fetch("/api/gemini", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -64,7 +64,7 @@
         // Save the interview data to the database
         
         const databaseresponse = await fetch(
-          "http://localhost:3000/api/save-interview",
+          "/api/save-interview",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
