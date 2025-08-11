@@ -76,7 +76,7 @@ export default function Page() {
       {/* Footer */}
       <footer className="p-4 sm:p-6 text-center">
         <p className="text-xs sm:text-sm text-muted-foreground">
-          © 2025 MockMate. Powered by AI for better interview preparation.
+          © 2025 MockMate. Powered by AI for better interview preparation
         </p>
       </footer>
     </div>
