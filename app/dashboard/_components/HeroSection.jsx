@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Users, Star, Clock, Link } from "lucide-react";
+import { ArrowRight, Play, Users, Star, Clock } from "lucide-react";
+import Link from "next/link";
 
 
 
