@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Users, Star, Clock } from "lucide-react";
+import { ArrowRight, Play, Users, Star, Clock, Link } from "lucide-react";
+import Link from "next/link";
 
 
 
@@ -52,10 +53,12 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Link href="/dashboard">
             <Button variant="outline" size="lg" className="min-w-[200px]  shadow-elegant cursor-pointer hover:shadow-glow transition-all duration-300 group-hover:scale-110 border backdrop-blur-sm ">
               Start Free Practice
               <ArrowRight className="w-5 h-5" />
             </Button>
+            </Link>
             <Button variant="outline" size="lg" className="min-w-[200px]  shadow-elegant cursor-pointer hover:shadow-glow transition-all duration-300 group-hover:scale-110 border backdrop-blur-sm">
               <Play className="w-5 h-5" />
               Watch Demo
