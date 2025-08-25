@@ -213,14 +213,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Google for Gemini AI API
 - Clerk for authentication services
-- Next.js team for the amazing framework
-- All contributors and users of this platform
 
 ## 📞 Support
 
 - **Documentation**: Check our [How It Works](app/HowItWorks/page.jsx) page
 - **Issues**: Report bugs using GitHub Issues
-- **Discussions**: Join our community discussions
 
 ---
 
