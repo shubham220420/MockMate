@@ -1,4 +1,4 @@
-# AI Interview Assistant 🤖
+# MockMate 🤖
 
 An intelligent AI-powered platform designed to help job seekers prepare for technical interviews through realistic mock interviews, personalized feedback, and comprehensive performance analysis.
 
@@ -33,8 +33,8 @@ An intelligent AI-powered platform designed to help job seekers prepare for tech
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/ai-interview-assistant.git
-cd ai-interview-assistant
+git clone https://github.com/yourusername/mockmate.git
+cd mockmate
 ```
 
 2. **Install dependencies**
